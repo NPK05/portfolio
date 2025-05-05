@@ -1,41 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact | Pavan Kumar Nallabothula</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to right, #f8fafc, #e0f2fe); color: #1e293b; }
-header, footer { background: #0f172a; color: white; text-align: center; padding: 1.5rem 1rem; }
-nav { background: #1e293b; padding: 1rem; text-align: center; }
-nav a { color: #cbd5e1; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-nav a:hover { color: #38bdf8; }
-.contact-container { max-width: 600px; margin: 3rem auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-form label { display: block; margin: 1rem 0 0.5rem; font-weight: bold; }
-input, textarea { width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #cbd5e1; }
-button { margin-top: 1rem; padding: 0.75rem 2rem; background: #0ea5e9; color: white; border: none; border-radius: 6px; cursor: pointer; }
-.social-links { text-align: center; margin-top: 2rem; }
-.social-links a { margin: 0 1rem; color: #1e293b; font-size: 1.5rem; }
-.social-links a:hover { color: #0ea5e9; }
-</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Pavan Kumar Nallabothula</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8fafc, #e0f2fe);
+      color: #1e293b;
+    }
+    header, footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    nav {
+      background: #1e293b;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #cbd5e1;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.75rem 2rem;
+      background: #0ea5e9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .social-links a {
+      margin: 0 1rem;
+      color: #1e293b;
+      font-size: 1.5rem;
+    }
+    .social-links a:hover {
+      color: #0ea5e9;
+    }
+  </style>
 </head>
 <body>
-<header><h1><i class="fas fa-envelope"></i> Contact Me</h1></header>
+<header>
+  <h1><i class="fas fa-envelope"></i> Contact Me</h1>
+</header>
+
 <nav>
-  <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="publications.html">Publications</a><a href="contact.html">Contact</a><a href="skills_experience_awards.html">Skills</a>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="contact.html">Contact</a>
+  <a href="skills_experience_awards.html">Skills</a>
 </nav>
+
 <section class="contact-container">
-  <form>
-    <label for="name">Name</label><input id="name" type="text" />
-    <label for="email">Email</label><input id="email" type="email" />
-    <label for="message">Message</label><textarea id="message" rows="4"></textarea>
+  <form action="https://formspree.io/f/xayrjbwd" method="POST">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" required>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" name="_replyto" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
     <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
   </form>
+
   <div class="social-links">
     <a href="mailto:npavankumarus72@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=npavankumarus72@gmail.com" target="_blank" title="Gmail">
+      <i class="fas fa-paper-plane"></i>
+    </a>
     <a href="https://www.linkedin.com/in/pavan-kumar-nallabothula-71a9a8226" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://npk05.github.io/portfolio/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://github.com/NPK05" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
   </div>
 </section>
-<footer><p>&copy; 2025 Pavan Kumar Nallabothula</p></footer>
+
+<footer>
+  <p>&copy; 2025 Pavan Kumar Nallabothula</p>
+</footer>
 </body>
 </html>
