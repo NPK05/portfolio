@@ -6,22 +6,57 @@
   <title>Pavan Kumar Nallabothula | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f0f4f8, #e2e8f0);
-      color: #1e293b;
-    }
-    header, footer {
+      height: 100%;
+      color: #fff;
       background: #0f172a;
+      overflow-x: hidden;
+    }
+    header {
+      position: relative;
+      height: 100vh;
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+    video#bgvid {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 0;
+      object-fit: cover;
     }
     nav {
-      background: #1e293b;
-      padding: 1rem;
+      background: rgba(15, 23, 42, 0.9);
       text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
     nav a {
       color: #cbd5e1;
@@ -32,54 +67,41 @@
     nav a:hover {
       color: #38bdf8;
     }
-    .intro {
-      max-width: 1000px;
-      margin: 2rem auto;
-      text-align: center;
-      padding: 2rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    section {
+      padding: 4rem 2rem;
+      background: #1e293b;
+      color: white;
     }
-    .intro h2 {
+    section h2 {
       font-size: 2rem;
-      color: #0f172a;
+      margin-bottom: 1rem;
+      color: #38bdf8;
     }
-    .intro p {
-      font-size: 1.1rem;
-      margin-top: 1rem;
+    section p {
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
     }
-    .highlights {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 3rem;
-      gap: 2rem;
-    }
-    .highlight {
-      background: #fff;
-      border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      width: 250px;
+    footer {
       text-align: center;
-    }
-    .highlight i {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-      color: #0ea5e9;
-    }
-    .highlight h3 {
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
+      background: #0f172a;
+      color: white;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
 
+<video autoplay muted loop id="bgvid">
+  <source src="background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div class="overlay"></div>
+
 <header>
   <h1>Pavan Kumar Nallabothula</h1>
-  <p>Data Scientist | AI Engineer | Innovator</p>
+  <p>Data Science Graduate | Data Analyst | ML Engineer | AI Researcher</p>
 </header>
 
 <nav>
@@ -90,31 +112,21 @@
   <a href="skills_experience_awards.html">Skills</a>
 </nav>
 
-<section class="intro">
-  <h2>Welcome to My Digital Portfolio</h2>
-  <p>Hello! I’m Pavan Kumar, a passionate data scientist with strong experience in machine learning, AI-generated speech, and data visualization. This website highlights some of the impactful projects and research I’ve worked on throughout my academic and professional journey.</p>
-
-  <div class="highlights">
-    <div class="highlight">
-      <i class="fas fa-laptop-code"></i>
-      <h3>Projects</h3>
-      <p>End-to-end ML systems, from E-commerce analytics to Stock prediction and TTS systems.</p>
-    </div>
-    <div class="highlight">
-      <i class="fas fa-brain"></i>
-      <h3>AI & ML Skills</h3>
-      <p>Deep learning, NLP, forecasting, clustering, fraud detection, and more.</p>
-    </div>
-    <div class="highlight">
-      <i class="fas fa-award"></i>
-      <h3>Certifications</h3>
-      <p>AWS Cloud & AI/ML Internships, hands-on experience in production-grade deployments.</p>
-    </div>
-  </div>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Data Science graduate with deep interest in building AI solutions that solve real-world challenges. 
+    With hands-on experience in E-commerce analytics, stock trend prediction, and advanced speech synthesis (TTS), 
+    I bring both technical depth and creative energy to every project. I have worked with tools like Python, Streamlit, 
+    TensorFlow, PyTorch, and Flask, and continue exploring cutting-edge topics like ONNX optimization and real-time inference systems.
+    <br/><br/>
+    Beyond technical skills, I value clarity in storytelling, user-centered design, and collaborative learning.
+    My career goal is to drive impactful insights through machine learning and data-driven strategies that matter.
+  </p>
 </section>
 
 <footer>
-  <p>&copy; 2025 Pavan Kumar Nallabothula | Designed with ❤️ and HTML</p>
+  <p>&copy; 2025 Pavan Kumar Nallabothula</p>
 </footer>
 
 </body>
