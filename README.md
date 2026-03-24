@@ -1,7 +1,7 @@
 # Pavan Kumar Nallabothula — Portfolio Website
 
 Personal portfolio website built with HTML, CSS and JavaScript.  
-Live at: **[https://npk05.github.io/](https://npk05.github.io/)**
+Live at: **[https://npk05.github.io/portfolio/**
 
 ---
 
